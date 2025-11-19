@@ -1,6 +1,6 @@
 #zadanie 8 ZESTAW 3 ANALIZA.STAT
-# Niech X b¦dzie zmienn¡ losow¡ równ¡ liczbie godzin, które studenci sp¦dzaj¡ w tygodniu
-#korzystaj¡c z internetu. Wyznacz kwartyl dolny, Q1, kwartyl górny, Q3, percentyl, P90,
+# Niech X bedzie zmienna losowa równa liczbie godzin, które studenci spedzaj¡ w tygodniu
+#korzystajac z internetu. Wyznacz kwartyl dolny, Q1, kwartyl górny, Q3, percentyl, P90,
 #dla zmiennej X o rozkªadzie normalnym z µ = 13.5 godziny i σ = 2.5 godziny. Obliczenia
 #wykonaj w Excelu oraz Pythonie.#
 import scipy.stats as stats
@@ -34,13 +34,13 @@ print(wynik13)
 odp14 = stats.chi2.cdf(30,26) 
 print(odp14)
 # zadanie 15 
-#Znajd¹ χ
+#Znajdz χ
 #2
 #0.05,15. Obliczenia wykonaj w Pythonie.
 #Dla α ∈ (0, 1), de
 #niujemy tα,n w taki sposób, »e
 #P(Tn ≥ tα,n) = α,
-#gdzie Tn jest zmienn¡ o rozkªadzie t-Studenta o n stopniach swobody.
+#gdzie Tn jest zmienna o rozkladzie t-Studenta o n stopniach swobody.
 funkcja15 = stats.chi2.ppf(0.95,15)
 print(funkcja15)
 #zadanie 16
@@ -64,4 +64,5 @@ lista2 = [13,13,17, 7, 22, 22,
 #lista2 = [16, 10, 16, 7, 17, 8, 6, 11, 21]
 print(np.quantile(lista2, 0.25))
 print(np.quantile(lista2, 0.5))
+
 print(np.quantile(lista2, 0.75))
